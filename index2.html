@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Invoice</title>
-     
-      <style>
-     
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice</title>
+
+    <style>
       @media print {
         *,
         *::after,
@@ -17,7 +16,7 @@
           box-sizing: border-box;
         }
 
-        .header-color { 
+        .header-color {
           background-color: #cecece !important;
         }
 
@@ -44,8 +43,6 @@
           align-items: center;
         }
 
-       
-
         .title-header {
           text-align: right;
           font-size: 4.5rem;
@@ -69,7 +66,7 @@
         }
         .branch-info {
           background-color: #cecece !important;
-          padding: 4.5rem 2.8rem ;
+          padding: 4.5rem 2.8rem;
           font-size: 2.1rem;
         }
         .grid-info > p > span {
@@ -145,254 +142,229 @@
           font-size: 1.4rem;
           text-align: left;
         }
-  
+
         .table-data > td,
         .table-header > th {
           border: 1px solid #cecece !important;
           padding: 8px;
           font-size: 1.2rem;
         }
-      }</style>
-    </head>
-    <body
+      }
+    </style>
+  </head>
+  <body
+    style="
+      max-width: 800px;
+      margin: 0 auto;
+      font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,
+        'Lucida Grande', sans-serif;
+    "
+  >
+    <header
       style="
-        max-width: 800px;
-        margin: 0 auto;
-        font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,
-          'Lucida Grande', sans-serif;
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 3rem;
+        margin-right: 3rem;
       "
     >
-      <header
-        style="
-          margin-top: 1.5rem;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          margin-left: 3rem;
-          margin-right: 3rem;
-        "
-      >
-        <img src="https://www.nicolasandasp.com/wp-content/themes/nicolas/img/Best%20Dental%20Clinic%20in%20Dubai.svg" />
-        <img src="https://clinic2.apollonia.health/assets/img/newlogo.svg" style="width: 150px" hight:150px/>
-      </header>
-      <div class="header-color" style="background-color: #cecece; padding: 1rem 0; margin-top: 1.5rem">
-        <h1 style="text-align: right;  margin-left: 3rem; margin-right: 3rem">
-          TAX INVOICE
-        </h1>
+      <img
+        src="https://www.nicolasandasp.com/wp-content/themes/nicolas/img/Best%20Dental%20Clinic%20in%20Dubai.svg"
+      />
+      <img
+        src="https://clinic2.apollonia.health/assets/img/newlogo.svg"
+        style="width: 150px"
+        hight:150px
+      />
+    </header>
+    <div
+      class="header-color"
+      style="background-color: #cecece; padding: 1rem 0; margin-top: 1.5rem"
+    >
+      <h1 style="text-align: right; margin-left: 3rem; margin-right: 3rem">TAX INVOICE</h1>
+    </div>
+    <p style="text-align: right; margin: 0 3rem 2rem; color: #000">TRN:1002533006000003</p>
+    <section style="display: grid; grid-template-columns: 1fr 1fr; margin-top: 3rem">
+      <div class="patient-info grid-info" style="border: 2px solid #000; padding: 2rem 1rem">
+        <p style="margin-top: 1.6rem; color: #000; font-weight: 300">
+          <span style="font-weight: 600">Patient Name: </span>SAIDA LICHARDUSOVA
+        </p>
+        <p style="margin-top: 1.6rem; color: #000">
+          <span style="font-weight: 600">Patient File Number: </span>1533033
+        </p>
+        <p style="margin-top: 1.6rem; color: #000">
+          <span style="font-weight: 600">Doctor: </span>ELEANOR JANE TURNER
+        </p>
       </div>
-      <p style="text-align: right;margin:0 3rem 2rem; color:#000;">
-        TRN:1002533006000003
-      </p>
-      <section  style="display: grid; grid-template-columns: 1fr 1fr; margin-top: 3rem">
-        <div
-          class="patient-info grid-info"
-          style="border: 2px solid #000; padding: 2rem 1rem;"
+      <div class="branch-info" style="background-color: #cecece; padding: 2rem 1rem">
+        <p style="margin-top: 1.6rem; color: #000; font-weight: 300">
+          <span style="font-weight: 600; color: #000">Branch: </span>Marina Walk
+        </p>
+        <p style="margin-top: 1.6rem">
+          <span style="font-weight: 600">Invoice Date: </span>31/05/2023
+        </p>
+        <p style="margin-top: 1.6rem">
+          <span style="font-weight: 600">Invoice Number: </span>2566690
+        </p>
+      </div>
+    </section>
+    <table style="border-collapse: collapse; width: 100%; margin: 0 auto; margin-top: 6rem">
+      <tr class="table-header">
+        <th
+          style="
+            background-color: black;
+            color: white;
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #cecece;
+          "
         >
-          <p style="margin-top: 1.6rem; color:#000; font-weight:300">
-            <span style="font-weight: 600">Patient Name: </span>SAIDA LICHARDUSOVA
-          </p>
-          <p style="margin-top: 1.6rem; color:#000;">
-            <span style="font-weight: 600">Patient File Number: </span>1533033
-          </p>
-          <p style="margin-top: 1.6rem; color:#000;">
-            <span style="font-weight: 600">Doctor: </span>ELEANOR JANE TURNER
-          </p>
-        </div>
-        <div class="branch-info" style="background-color: #cecece; padding: 2rem 1rem; ">
-          <p style="margin-top: 1.6rem; color:#000; font-weight:300" ><span style="font-weight: 600; color:#000;">Branch: </span ">Marina Walk</p>
-          <p style="margin-top: 1.6rem">
-            <span style="font-weight: 600">Invoice Date: </span>31/05/2023
-          </p>
-          <p style="margin-top: 1.6rem">
-            <span style="font-weight: 600">Invoice Number: </span>2566690
-          </p>
-        </div>
-      </section>
-      <table style="border-collapse: collapse; width: 100%; margin: 0 auto; margin-top: 3rem">
-        <tr class="table-header">
-          <th
-            style="
-              background-color: black;
-              color: white;
-             padding:5px;
-             
-              text-align: left;
-              border: 1px solid #cecece;
-            "
-          >
-            Description
-          </th>
-          <th
-            style="
-              background-color: black;
-              color: white;
-              padding:5px;
-             
-              text-align: left;
-              border: 1px solid #cecece;
-            "
-          >
-            Price
-          </th>
-          <th
-            style="
-              background-color: black;
-              color: white;
-              padding:5px;
-              
-              text-align: left;
-              border: 1px solid #cecece;
-            "
-          >
-            Code
-          </th>
-          <th
-            style="
-              background-color: black;
-              color: white;
-              padding:5px;
-              text-align: left;
-              border: 1px solid #cecece;
-            "
-          >
-            Price List
-          </th>
-          <th
-            style="
-              background-color: black;
-              color: white;
-              padding:5px;
-              
-              text-align: left;
-              border: 1px solid #cecece;
-            "
-          >
-            Patient Pay
-          </th>
-          <th
-            style="
-              background-color: black;
-              color: white;
-              padding:5px;
-             
-              text-align: left;
-              border: 1px solid #cecece;
-            "
-          >
-            Insurance Pay
-          </th>
-          <th
-            style="
-              background-color: black;
-              color: white;
-              padding:5px;
-             
-              text-align: left;
-              border: 1px solid #cecece;
-            "
-          >
-            5% VAT
-          </th>
-          <th
-            style="
-              background-color: black;
-              color: white;
-              padding:5px;
-              text-align: left;
-              border: 1px solid #cecece;
-            "
-          >
-            Tooth
-          </th>
-          <th
-           
-            style="
-              background-color: black;
-              color: white;
-              padding: 8px;
-              padding:5px;
-              text-align: left;
-              border: 1px solid #cecece;
-            "
-          >
-            Total in AED
-          </th>
-        </tr>
-        <tr class="table-data">
-          <td style="border: 1px solid #cecece;  ">
-            (JUM)Teeth Whitening Special
-          </td>
-          <td style="border: 1px solid #cecece; ">1429.0 AED</td>
-          <td style="border: 1px solid #cecece; ">D999</td>
-          <td style="border: 1px solid #cecece; ">Cash</td>
-          <td style="border: 1px solid #cecece; ">1.500.45 AED</td>
-          <td style="border: 1px solid #cecece; ">0</td>
-          <td style="border: 1px solid #cecece; ">71.45 AED</td>
-          <td style="border: 1px solid #cecece; "></td>
-          <td style="border: 1px solid #cecece; ">1500.45 AED</td>
-        </tr>
-      </table>
+          Description
+        </th>
+        <th
+          style="
+            background-color: black;
+            color: white;
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #cecece;
+          "
+        >
+          Price
+        </th>
+        <th
+          style="
+            background-color: black;
+            color: white;
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #cecece;
+          "
+        >
+          Code
+        </th>
+        <th
+          style="
+            background-color: black;
+            color: white;
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #cecece;
+          "
+        >
+          Price List
+        </th>
+        <th
+          style="
+            background-color: black;
+            color: white;
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #cecece;
+          "
+        >
+          Patient Pay
+        </th>
+        <th
+          style="
+            background-color: black;
+            color: white;
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #cecece;
+          "
+        >
+          Insurance Pay
+        </th>
+        <th
+          style="
+            background-color: black;
+            color: white;
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #cecece;
+          "
+        >
+          5% VAT
+        </th>
+        <th
+          style="
+            background-color: black;
+            color: white;
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #cecece;
+          "
+        >
+          Tooth
+        </th>
+        <th
+          style="
+            background-color: black;
+            color: white;
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #cecece;
+          "
+        >
+          Total in AED
+        </th>
+      </tr>
+      <tr class="table-data">
+        <td style="border: 1px solid #cecece; padding: 10px">(JUM)Teeth Whitening Special</td>
+        <td style="border: 1px solid #cecece; padding: 10px">1429.0 AED</td>
+        <td style="border: 1px solid #cecece; padding: 10px">D999</td>
+        <td style="border: 1px solid #cecece; padding: 10px">Cash</td>
+        <td style="border: 1px solid #cecece; padding: 10px">1.500.45 AED</td>
+        <td style="border: 1px solid #cecece; padding: 10px">0</td>
+        <td style="border: 1px solid #cecece; padding: 10px">71.45 AED</td>
+        <td style="border: 1px solid #cecece; padding: 10px"></td>
+        <td style="border: 1px solid #cecece; padding: 10px">1500.45 AED</td>
+      </tr>
+    </table>
+    <div
+      style="
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        padding: 2.5rem 1rem 0;
+        gap: 1rem;
+      "
+    >
+      <div style="display: flex; align-items: center; align-content: center; gap: 1rem">
+        <span>Total</span>
+        <span
+          class="sum-info"
+          style="background-color: #cecece; padding: 1rem; min-width: 120px; text-align: start"
+          >1071.75 AED</span
+        >
+      </div>
+      <div style="display: flex; align-items: center; align-content: center; gap: 1rem">
+        <span>VAT 5%</span>
+        <span
+          class="sum-info"
+          style="background-color: #cecece; padding: 1rem; min-width: 120px; text-align: start"
+          >53.59 AED</span
+        >
+      </div>
       <div
         style="
           display: flex;
-          align-items: end;
-          flex-direction: column;
-  
-         
-  
-          padding: 2.5rem;
+          align-items: center;
+          align-content: center;
           gap: 1rem;
-        
+          font-weight: 600;
         "
       >
-        <div style="display: flex; align-items: center; align-content: center; gap: 1rem">
-          <span >Total</span>
-          <span
+        <span>Total Amount</span>
+        <span
           class="sum-info"
-            style="
-              background-color: #cecece;
-              padding: 1rem;
-              min-width: 120px;
-              text-align: start;
-            "
-            >1071.75 AED</span
-          >
-        </div>
-        <div style="display: flex; align-items: center; align-content: center; gap: 1rem">
-          <span >VAT 5%</span>
-          <span
-          class="sum-info"
-            style="
-              background-color: #cecece;
-              padding: 1rem;
-              min-width: 120px;
-              text-align: start;
-            "
-            >53.59 AED</span
-          >
-        </div>
-        <div
-        
-          style="
-            display: flex;
-            align-items: center;
-            align-content: center;
-            gap: 1rem;
-            font-weight: 600;
-          "
+          style="background-color: #cecece; padding: 1rem; min-width: 120px; text-align: start"
+          >1125.3 AED</span
         >
-          <span >Total Amount</span>
-          <span
-          class="sum-info"
-            style="
-              background-color: #cecece;
-              padding: 1rem;
-              min-width: 120px;
-              text-align: start;
-            "
-            >1125.3 AED</span
-          >
-        </div>
       </div>
-    </body>
-  </html>
+    </div>
+  </body>
+</html>
