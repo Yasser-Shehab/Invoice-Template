@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice</title>
+    <style>
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        max-width: 911px;
+        margin: 0 auto;
+        border: 1px solid black;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,
+          Arial, "Lucida Grande", sans-serif;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+
+      .default-margin {
+        margin-left: 3rem;
+        margin-right: 3rem;
+      }
+
+      .header {
+        margin-top: 8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .title {
+        background-color: #cecece;
+        padding: 1rem 0;
+        margin-top: 8rem;
+      }
+
+      .title-header {
+        text-align: right;
+        font-size: 4.5rem;
+      }
+
+      .title-subheader {
+        text-align: right;
+        font-size: 2.3rem;
+      }
+
+      .info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 6rem;
+      }
+
+      .patient-info {
+        border: 2px solid #000;
+        padding: 4.5rem 2.8rem;
+        font-size: 2.1rem;
+      }
+      .branch-info {
+        background-color: #cecece;
+        padding: 4.5rem 2.8rem;
+        font-size: 2.1rem;
+      }
+      .grid-info > p > span {
+        font-weight: 600;
+      }
+      .grid-info > p {
+        margin-top: 1.6rem;
+      }
+
+      .table {
+        border-collapse: collapse;
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 7rem;
+      }
+
+      .table-header > th {
+        background-color: black;
+        color: white;
+        padding: 8px;
+        font-size: 1.4rem;
+        text-align: left;
+      }
+
+      .table-data > td,
+      .table-header > th {
+        border: 1px solid #cecece;
+        padding: 8px;
+        font-size: 1.2rem;
+      }
+
+      .total-sum {
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        /* margin: 0 auto; */
+        margin-top: 3rem;
+
+        padding: 2.5rem;
+        gap: 1rem;
+        margin-bottom: 20rem;
+      }
+
+      .total-sum-info {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        gap: 1rem;
+      }
+
+      .total-header {
+        font-size: 1.6rem;
+      }
+      .total-amount {
+        font-size: 1.6rem;
+        background-color: #cecece;
+        padding: 1rem;
+        /* margin-top: 1rem; */
+        min-width: 120px;
+        text-align: start;
+      }
+
+      .bold {
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header default-margin">
+      <img src="./assets/nicolas&asp.svg" />
+      <img src="./assets/apollonia.jpg" />
+    </header>
+    <div class="title">
+      <h1 class="title-header default-margin">TAX INVOICE</h1>
+    </div>
+    <p class="title-subheader default-margin">TRN:1002533006000003</p>
+    <section class="info">
+      <div class="patient-info grid-info">
+        <p><span>Patient Name: </span>SAIDA LICHARDUSOVA</p>
+        <p><span>Patient File Number: </span>1533033</p>
+        <p><span>Doctor: </span>ELEANOR JANE TURNER</p>
+      </div>
+      <div class="branch-info grid-info">
+        <p><span>Branch: </span>Marina Walk</p>
+        <p><span>Invoice Date: </span>31/05/2023</p>
+        <p><span>Invoice Number: </span>2566690</p>
+      </div>
+    </section>
+    <table class="table">
+      <tr class="table-header">
+        <th>Description</th>
+        <th>Price</th>
+        <th>Code</th>
+        <th>Price List</th>
+        <th>Patient Pay</th>
+        <th>Insurance Pay</th>
+        <th>5% VAT</th>
+        <th>Tooth</th>
+        <th>Total in AED</th>
+      </tr>
+      <tr class="table-data">
+        <td>(JUM)Teeth Whitening Special</td>
+        <td>1429.0 AED</td>
+        <td>D999</td>
+        <td>Cash</td>
+        <td>1.500.45 AED</td>
+        <td>0</td>
+        <td>71.45 AED</td>
+        <td></td>
+        <td>1500.45 AED</td>
+      </tr>
+    </table>
+    <div class="total-sum">
+      <div class="total-sum-info">
+        <span class="total-header">Total</span>
+        <span class="total-amount">1071.75 AED</span>
+      </div>
+      <div class="total-sum-info">
+        <span class="total-header">VAT 5%</span> <span class="total-amount">53.59 AED</span>
+      </div>
+      <div class="total-sum-info bold">
+        <span class="total-header">Total Amount</span> <span class="total-amount">1125.3 AED</span>
+      </div>
+    </div>
+  </body>
+</html>
